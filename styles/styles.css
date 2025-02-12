@@ -1,0 +1,63 @@
+body {
+    background-image: url(../images/berries.jpg);
+}
+
+.background {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.card {
+    background-color: rgba(125, 161, 139, 0.91);
+    max-width: 580px;
+    width: 100%;
+    min-height: 330px;
+    border: 3px solid #FFD700;
+    border-radius: 45%;
+}
+
+.headline {
+    text-align: center;
+}
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.card-info {
+    display: flex;
+    gap: 15px;
+}
+
+@keyframes imgZoom {
+    0% {transform: scale(1) rotate(20deg);}
+    50% {transform: scale(1.1) rotate(0deg);}
+    100% {transform: scale(1) rotate(20deg);}
+}
+
+.card-img {
+    width: 70%;
+    animation: imgZoom 3.5s ease infinite;
+    
+}
+
+.card-text {
+    margin: 10px 0 15px 15px;
+}
+
+.textbox { 
+    margin: 0 0 15px 15px;
+}
+
+.btn {
+    margin-left: 15px;
+    width: 100px;
+    margin: 15px auto 0 auto;
+}
+
