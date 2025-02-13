@@ -11,29 +11,54 @@ body {
     
 }
 
+
+
 .card {
     background-color: rgba(125, 161, 139, 0.91);
     max-width: 580px;
     width: 100%;
     min-height: 330px;
+    height: 370px;
     border: 3px solid #FFD700;
     border-radius: 45%;
 }
 
 .headline {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    margin-bottom: 20px;
 }
+
+h1 {
+    font-family: "IM Fell English", serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+ h2 {
+    font-family: "IM Fell English", serif;
+    margin: 0;
+ }
 
 .signup {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    margin-left: 20px;
+    width: 70%;
+    max-width: 100%;
     
 }
 
 .card-info {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
+
+
 
 @keyframes imgZoom {
     0% {transform: scale(1) rotate(20deg);}
@@ -42,22 +67,53 @@ body {
 }
 
 .card-img {
-    width: 70%;
+    max-width: 300px;
+    width: 100%;
     animation: imgZoom 3.5s ease infinite;
     
 }
 
 .card-text {
-    margin: 10px 0 15px 15px;
+    margin: 10px 0 0px 15px;
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    text-align: end;
 }
 
 .textbox { 
-    margin: 0 0 15px 15px;
+    width: 180px;
+    margin: 20px 0 7px 20px;
+    border: 2px solid transparent;
+    
+    border-radius: 10px;
+    background-color: rgb(237, 228, 128);
+}
+
+.textbox:hover {
+    background-color: #f3c920;
+    transition: border-color 0.4s ease;
+    border: 2px solid rgb(77, 68, 25);
+    cursor: text;
+
 }
 
 .btn {
     margin-left: 15px;
     width: 100px;
-    margin: 15px auto 0 auto;
+    height: 28px;
+    margin-top: 15px;
+    border: 1px solid #a4932fe7;
+    border-radius: 100px;
+    background-color: #72b04e;
+    font-family: "IM Fell English", serif;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #5a9a34;
+    transition: transform 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+    transform: scale(1.1);
+    border: 2px solid #a4932fe7;
 }
 

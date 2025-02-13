@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Document</title>
@@ -12,17 +20,18 @@
         <div class="card">
             <section class="headline">
                 <h1>Charity Market</h1>
-                <h2>last chance!</h2>
+                <h2 class="animate__animated animate__slideInLeft">and Auction!</h2>
             </section>
             <section class="card-info">
                 <div class="signup">
-                    <p class="card-text">Dont' miss out on the last charity market of the summer.</p>
-                    <input class="textbox" type="text" placeholder="Your Name">
-                    <button class="btn">Sign me up</button>
+                    <p class="card-text">Dont' miss out on the last charity market of the summer!</p>
+                    <p class="card-text">Register here for a 10% discount at the stall of your choice.</p>
+                    <form class="signup">
+                        <input type="email" class="textbox" placeholder="Your Email" required>
+                        <button class="btn" type="submit">Sign me up</button>
+                    </form>
                 </div>   
                 <img class="card-img" src="images/gavel.png" alt="auction gavel" width="300px">
-
-                
             </section>
 
         </div>
